@@ -1,0 +1,91 @@
+body {
+    /* background-color: lightblue; */
+    /*background-color:     #fde879; */
+    background-color: #fcd937;
+    
+  }
+  
+  h1, h2 {
+    color: rgb(102, 102, 102);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(124, 124, 124);
+    padding: 10px;
+  }
+  
+  .container {
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .articles {
+    background-image: url(http://localhost/javascript_cvicenia/cv_1/images/background.png);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    height: 600px; 
+    
+    
+    padding: 10px 0px 10px 0px;
+  }
+  
+  #Nadpis_headline {
+    
+    padding: 5px 10px 5px 10px;
+    border: 1px ;
+    border-style: none;
+    border-color: dimgrey;
+    margin-bottom: 50px;
+   
+    
+  }
+
+  /* footer part of the page */
+  .footer_image {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 20px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    background-color: #cca700;
+}
+
+
+
+  /* absolute positioned elements in central filed 
+     for further reference please visit https://blog.hubspot.com/website/center-div-css#:~:text=To%20center%20a%20div%20horizontally%20on%20a%20page%2C%20simply%20set,equally%20between%20the%20two%20margins.
+     20.2.2021
+  */
+
+  #customized_time_by_javascript {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+  }
+
+  #customized_greeting_by_javascript {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    font-size: 40px;
+
+    padding: 10px;
+  }
+
+
+
+  

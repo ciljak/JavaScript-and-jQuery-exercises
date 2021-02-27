@@ -1,0 +1,92 @@
+body {
+    /* background-color: lightblue; */
+    /*background-color:     #fde879; */
+    background-color: #fcd937;
+    
+  }
+  
+  h1, h2 {
+    color: rgb(102, 102, 102);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(124, 124, 124);
+    padding: 10px;
+    
+  }
+
+  #text_echo_p {
+    text-align: center;
+  }
+  
+  .container {
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .articles {
+    background-image: url(http://localhost/javascript_cvicenia/cv_3/images/background.png);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    
+    
+    padding: 10px 0px 10px 0px;
+  }
+
+  .convert_to_block {
+    display: block;
+  }
+
+  input {
+        border: 0;
+        border-radius: 2px;
+        padding: 2px;
+        background: #81f1d5;
+        font: 12pt sans-serif;
+        
+
+  }
+
+  .center {
+    margin: 0px auto;
+  }
+  
+  #Nadpis_headline {
+    
+    padding: 5px 10px 5px 10px;
+    border: 1px ;
+    border-style: none;
+    border-color: dimgrey;
+    margin-bottom: 50px;
+   
+    
+  }
+
+  /* footer part of the page */
+  .footer_image {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 20px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    background-color: #cca700;
+}
+
+
+
+  
+  
+
+
+
+
+  

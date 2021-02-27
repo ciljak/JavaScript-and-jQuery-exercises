@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<div class="container">
+
+      <h1 id="Nadpis_headline">This is a Heading</h1> <!-- Príklad vloženia nadpisu prvej úrovne + DOM manipulácia textu-->
+
+      <div class="articles">
+
+        <img class="center convert_to_block" src="http://localhost/javascript_cvicenia/cv_4/images/banner.png" alt="Banner with name Quadratic equation solver and calculus formulas.">
+        <br />
+        <h2>JavaScript DOM queries - example of DOM manipulation</h2>
+        <ul id="unordered_list">
+          <li>getElementById()</li>
+          <li>querySelector()</li>
+          <li>getElementsByClassName()</li>
+          <li>getElementsByTagName()</li>
+          
+        </ul>
+        <div id="text_echo" onclick="resetColor()">
+          <p id="text_echo_p">Color change area - for a colorchange use buttons</p>
+
+        </div>
+
+        <button onclick="toRed()"> Change color to RED </button>
+        <button onclick="toBlue()"> Change color to BLUE </button>
+        <button onclick="toGreen()"> Change color to GREEN </button>
+        
+        
+                
+      </div>  
+</div>
+
+<div class="footer">
+    <img class="footer_image" src="http://localhost/javascript_cvicenia/cv_3/images/logos.png" alt="Bottom images for HTML+CSS+Javascript">
+</div>
+<script src="./js/script.js"> </script> 
+</body>
+</html>

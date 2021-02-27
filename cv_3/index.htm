@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<div class="container">
+
+      <h1 id="Nadpis_headline">This is a Heading</h1> <!-- Príklad vloženia nadpisu prvej úrovne + DOM manipulácia textu-->
+
+      <div class="articles">
+
+        <img class="center convert_to_block" src="http://localhost/javascript_cvicenia/cv_3/images/banner.png" alt="Banner with name Quadratic equation solver and calculus formulas.">
+        <br />
+        <h2>Please fill in total rainfall in mm for appropriate month into a fieleds bellow</h2>
+        
+        
+        <table class="center">
+          <tr>
+            <td><label for="jan">Jan - mm</label></td>
+            <td><input id="jan" type="text" name="jan" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="feb">Feb - mm</label></td>
+            <td><input id="feb" type="text" name="feb" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="mar">Mar - mm</label></td>
+            <td><input id="mar" type="text" name="mar" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="apr">Apr- mm</label></td>
+            <td><input id="apr" type="text" name="apr" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="may">May - mm</label></td>
+            <td><input id="may" type="text" name="may" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="jun">Jun - mm</label></td>
+            <td><input id="jun" type="text" name="jun" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="jul">Jul - mm</label></td>
+            <td><input id="jul" type="text" name="jul" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="aug">Aug- mm</label></td>
+            <td><input id="aug" type="text" name="aug" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+           
+          </tr>
+          <tr>
+            <td><label for="sep">Sep - mm</label></td>
+            <td><input id="sep" type="text" name="sep" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="oct">Oct - mm</label></td>
+            <td><input id="oct" type="text" name="oct" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="nov">Nov - mm</label></td>
+            <td><input id="nov" type="text" name="nov" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+          <tr>
+            <td><label for="dec">Dec - mm</label></td>
+            <td><input id="dec" type="text" name="dec" value="0" onchange="calculateRainStat()" maxlength="4" size="4"></td>
+            
+          </tr>
+
+          </table>
+        
+        
+
+
+        <p id="result">For obtaining your result, please clik into a edit field and change value. Result will occur immediately.</p>
+       
+       
+        
+      </div>  
+</div>
+
+<div class="footer">
+    <img class="footer_image" src="http://localhost/javascript_cvicenia/cv_3/images/logos.png" alt="Bottom images for HTML+CSS+Javascript">
+</div>
+<script src="./js/script.js"> </script> 
+</body>
+</html>
