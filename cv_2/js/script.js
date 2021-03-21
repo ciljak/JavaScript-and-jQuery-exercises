@@ -19,7 +19,9 @@ function calculateResult () { // function for calculating results
     var element_result=  document.getElementById('result');
     element_result.textContent ='Roots of quadratic equation are: x1 =' + x[0] + ' X2 = ' + x[1];
 
-
+    // debug into a console
+    console.log('Roots of quadratic equation are: x1 =' + x[0] + ' X2 = ' + x[1]);
+    
     return x;
 }
 

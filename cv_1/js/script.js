@@ -9,8 +9,9 @@ var today_is = new Date (); // creating new Date class object
 var curentTime = today_is.getHours(); // obtaining current time from date object
 var cuentMinute = today_is.getUTCMinutes();
 
+
 var curentDay = today_is.getDate();
-var curentMonth = today_is.getMonth();
+var curentMonth = today_is.getMonth() + 1; // month is displayed from 0 to 11, correcion is +1
 var curentYear = today_is.getUTCFullYear();
 var our_greeting;
 

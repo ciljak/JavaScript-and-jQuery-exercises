@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuery introduction</title>
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/jquery-3.6.0.js"> </script> 
+
+</head>
+<body>
+<div class="container">
+
+      <h1 id="Nadpis_headline">This is a Heading</h1> <!-- Príklad vloženia nadpisu prvej úrovne + DOM manipulácia textu-->
+
+      <div class="articles">
+
+        <img class="center convert_to_block" src="http://localhost/javascript_cvicenia/cv_5/images/banner.png" alt="Banner with name Quadratic equation solver and calculus formulas." width="450">
+        <br />
+        <h2>JavaScript vs JQuery</h2>
+        <p id="about_jquery"><span class="jquery_blue"> jQuery </span> is a fast, small, and feature-rich JavaScript library. 
+           It makes things like HTML document traversal and manipulation, event handling, animation,
+           and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. 
+           With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript. <a href="https://jquery.com/"> <sub>[1], 24.3.2021</sub></a></p>
+        
+        <p id="introduction_to_work">Most common way how to work with <span class="jquery_blue">JQery </span>library is:</p>
+
+        <div class="ol_width_container">
+            <ol id="ordered_list">
+              <li>Link external <span class="jquery_blue">JQery </span> library or download it and link locally</li>
+              <li>Select and manipulate DOM elements</li>
+              <li>Handle events</li>
+              <li>Write function and optionaly asociate them to events</li>
+              <li>Work with canvas or use JavaScript API</li>
+              <li>Implement AJAX</li>
+              
+            </ol>
+        </div>
+
+        <div class="center">
+            <button onclick="toJavascript()"> Add ol element by JavaScript </button>
+            <button id="button_2"> Add another elements by JQuery </button>
+            <button id="hide_list"> Hide/ show (Toggle) ordered list</button>
+        </div>
+        
+        
+                
+      </div>  
+</div>
+
+<div class="footer">
+    <img class="footer_image" src="http://localhost/javascript_cvicenia/cv_5/images/logos.png" alt="Bottom images for HTML+CSS+Javascript">
+</div>
+<script src="./js/script.js"> </script> 
+</body>
+</html>

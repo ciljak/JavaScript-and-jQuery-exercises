@@ -1,0 +1,156 @@
+body {
+    /* background-color: lightblue; */
+    /*background-color:     #fde879; */
+    background-color: #fcd937;
+    
+  }
+  
+  h1, h2 {
+    color: rgb(102, 102, 102);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(124, 124, 124);
+    padding: 10px;
+    
+  }
+
+  #text_echo_p {
+    text-align: center;
+  }
+  
+  .container {
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .ol_width_container {
+    display: block;
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .articles {
+    background-image: url(http://localhost/javascript_cvicenia/cv_3/images/background.png);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    
+    
+    padding: 10px 0px 10px 0px;
+  }
+
+  .convert_to_block {
+    display: block;
+  }
+
+  input {
+        border: 0;
+        border-radius: 2px;
+        padding: 2px;
+        background: #81f1d5;
+        font: 12pt sans-serif;
+        
+
+  }
+
+  .center {
+    display: block;
+    
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  li {
+    padding: 5px;
+  }
+  #Nadpis_headline {
+    
+    padding: 5px 10px 5px 10px;
+    border: 1px ;
+    border-style: none;
+    border-color: dimgrey;
+    margin-bottom: 50px;
+   
+    
+  }
+
+  /* footer part of the page */
+  .footer_image {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 20px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    background-color: #cca700;
+}
+
+/***
+*  Stying Events list
+*/
+.events  {
+  background-color: #eeeeee;
+  border: 1px ;
+  -webkit-border-radius: 15px 0px 0px 0px;
+  border-radius: 15px 0px 0px 0px;
+  border-style: solid;
+  border-color: dimgrey;
+
+  border-left: 10px;
+  border-style: solid;
+  border-left-color: #0168ae;
+}
+
+p.events  {
+  margin: 10px;
+}
+
+span.event_highlighted 
+{
+  display: block;
+  margin-top: 20px;
+  color:   #0168ae;
+  font-family: verdana;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 5px;
+  background-color: white;
+
+  width: fit-content;
+
+  border-top: 1px ;
+  border-left: 1px ;
+  border-bottom: 0px;
+  border-right: 0px;
+  -webkit-border-radius: 5px 0px 0px 0px;
+  border-radius: 5px 0px 0px 0px;
+  border-style: solid;
+  border-color: dimgrey;
+
+}
+
+.events_width_container {
+  display: block;
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+
+  
+  
+
+
+
+
+  

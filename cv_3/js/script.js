@@ -28,6 +28,7 @@ function calculateRainStat () { // function for calculating results
     var sum = 0;
     var N = year.length; // length of a array
     
+    
     // accumulating total rainfall
     for(var i = 0; i<N; i++) {
        sum = sum +  parseFloat(year[i]);
@@ -42,7 +43,7 @@ function calculateRainStat () { // function for calculating results
     average = sum / N;
     
 
-    // finding minimal value
+    // finding maximal value
     max = myMaximum (year); // call function myMaximum(), return multiple values by using array as return type
 
     console.log(' max' + max[0] + ' and position is ' + max[1] + ' that mean a month' + obtainMonthFromIndex (max[1]));
