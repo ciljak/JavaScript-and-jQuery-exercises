@@ -1,0 +1,1 @@
+Training scenario 8 . Simple app for guessing decimal value of binarz generated number.

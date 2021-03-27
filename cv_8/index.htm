@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JQuery introduction</title>
+<title>JQuery introduction - name decimal value</title>
 <link rel="stylesheet" href="./css/style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <script src="./js/jquery-3.6.0.js"> </script> 
@@ -17,44 +17,43 @@
 
         <img class="center convert_to_block" src="http://localhost/javascript_cvicenia/cv_5/images/banner.png" alt="Banner with name Quadratic equation solver and calculus formulas." width="450">
         <br />
-        <h2>Form validation with client scripting technology</h2>
-        <p id="about_jquery">client scripting technology as JavaScript (optionally supported by jQuery library) can be used for first validation of values 
-           inserted into a submiting form.  This is a way how to lower a load of server by reducing number of form resubmiting after incorect data 
-           post. </p>
+        <h2>What is decimal representation of that number</h2>
+        <p id="about_jquery">In a bellow part of page is displayed binary number. Your quest is calculate its decimal representation and write
+           it into a response field bellow. After mouse click on check button or onto area with binary number your number is checked against a correct value. </p>
         
         <div class="events_width_container ">
            <form action="index.htm" method="post">
               <div class="fieldset" >
-                  <legend>Example of form:</legend>
+                  <legend>Examine right decimal representation of that binary number:</legend>
                   <table id="form_table">
                      <tr>
                         <td>
-                           <label for="id">Nick:</label>
+                           <label for="id">Number in binary:</label>
                         </td>
                         <td>
-                           <input id="nick" name="nick" type="text">
+                           <span id="binary_number">Here will be binary nr. </span>(N)<sub class="green">B</sub>
                         </td>
                      </tr>
                      <tr>
                         <td>
-                           <label for="age">Age:</label>
+                           <label for="decimal">Decimal representation is:</label>
                         </td>
                         <td>
-                           <input id="age" name="age" type="text" width="3" maxlength="3" size="3">
+                           <input id="decimal" name="decimal" type="text" width="3" maxlength="3" size="3"> <span id="hidden_decimal_result"> Hiden result (N)</span><sub class="blue">D</sub>
                         </td>
                      </tr>
-                     <tr>
-                     <td>
-                        <label for="">e-mail:</label>
+                   
+                  <tr>
+                     <td colspan="2">
+                         <img id="fireworks_image" src="./images/fireworks.png" alt="Hiden fireworks image for victory result :-)">
                      </td>
-                     <td>
-                        <input id="e-mail" name="e-mail" type="e-mail" >
-                     </td>
-                  </tr>
+                     
+                  </tr>   
                   <tr>
                   
                      <td colspan="2">
-                        <center><button type="submit" id="submit" name="submit" class="btn btn-primary center"> Submit</button></center>
+                        <center><button type="button" id="check" name="check" class="btn btn-primary center"> Check</button>
+                        <img id="next_image" src="./images/next.png" alt="Button for generating new number for guess"></center>
                      </td>
                
                   </tr>

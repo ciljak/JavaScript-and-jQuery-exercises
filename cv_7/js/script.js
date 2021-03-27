@@ -3,22 +3,24 @@
  */
 
 
-$("#Nadpis_headline").text("Exercise nr. 6 - JQuery event handling - practical examples");
-
-/* Main logic - example how to handle events with JQuery */
-
-
-
-
 $(document).ready(function(){ // waiting to document to by fully loaded - best practise to eliminate inconsistency in display 
-    // recolorize event paragraph if mous is hover
-    $('.events').hover(function(){ // on mouse hover recolorize paragraph text marked with class .events
-      $(this).css('background', '#fde879');
-    });
 
-    $('.events').mouseleave(function(){ // on mouse leave reset color to default #eeeeee
-      $(this).css('background', '#eeeeee');
-    });
+  $("#Nadpis_headline").text("Exercise nr. 7 - client JavaScript scripts as form prevalidators");
+
+    /* Main logic - example how to handle events with JQuery */
+    
+    /* I. colorize input fields if mouse is hover */
+          // recolorize input element if mous is hover
+          $('input').hover(function(){ // on mouse hover recolorize paragraph text marked with class .events
+            $(this).css('background', '#fde879');
+            $(this).css('border-color', 'darkgray');
+            $(this).css('border-style', 'solid');
+            $(this).css('border-width', '1px');
+          });
+
+          $('input').mouseleave(function(){ // on mouse leave reset color to default #eeeeee
+            $(this).css('background', 'deepskyblue');
+          });
 
 
     //on button events
@@ -27,36 +29,7 @@ $(document).ready(function(){ // waiting to document to by fully loaded - best p
       $("#play_with_button").text("Button - clicked!");
     });
 
-    $('#play_with_button').on('click', function(){
-      $("#play_with_button").text("Button - clicked alternate way with .on() method!");
-      
-    });
-
-    $('#play_with_button').dblclick(function(){
-      $("#play_with_button").text("Button - doubleclicked!");
-      
-    });
-
-    $('#play_with_button').hover(function(){
-      $("#play_with_button").text("Button - hover!");
-    });
-
-    $('#play_with_button').on('mouseenter', function(){
-      $("#play_with_button").text("Button - mouseenter!");
-    });
-
-    $('#play_with_button').on('mouseleave', function(){
-      $("#play_with_button").text("Button - mouseleave!");
-    });
-
-    $('#play_with_button').on('mousemove', function(){
-      $("#play_with_button").text("Button - mousemove!");
-    });
-
-    $('#play_with_button').on('mousedown', function(){
-      ("#play_with_button").text("Button - mousedown!");
-    });
-
+    
 
     //passing button event
     $('#button_1').click(function(e){
@@ -71,33 +44,18 @@ $(document).ready(function(){ // waiting to document to by fully loaded - best p
       $('#mouse_position').html('Mouse cursor pointing to  X: '+e.clientX+" Y: "+e.clientY);
     });
   
-  /*			
+  			
 		
 		
 		
 		
 			
-			$(document).on('mousemove', function(e){
-				$('#coords').html('Coords: Y: '+e.clientY+" X: "+e.clientX);
-			});
-			$('input').focus(function(){
-				//alert('Focus');
-				$(this).css('background', 'pink');
-			});
-			$('input').blur(function(){
-				//alert('Focus');
-				$(this).css('background', 'white');
-			});
-			$('input').keyup(function(e){
-				console.log(e.target.value);
-			});
-			*/
+		
 
 
 });
 
-/* part writing outuput to the end of the document about exercise in this chapter.*/
-document.write('In this exercise we introduce way how to handle most common events with JQuery.');
+
 
 
 

@@ -13,10 +13,13 @@ $("#Nadpis_headline").text("Exercise nr. 5 - JQuery introduction - same things i
 // select ordered list for change a style - example with javascript and jquery
 
 //by javascript
-var ordered_list =  document.getElementById('ordered_list');
-ordered_list.style.fontFamily = "verdana";
+/* var ordered_list =  document.getElementById('ordered_list');
+ordered_list.style.fontFamily = "verdana"; */
+
+
 
 $(document).ready(function(){ // waiting to document to by fully loaded - best practise to eliminate inconsistency in display 
+  $('#ordered_list').css({"font-family": "Arial, Helvetica, sans-serif", "font-size": "90%"});
     //with JQuery
     $('#ordered_list').css('color', 'gray');  // # select by id, apply CSS manipulation with pair atribute and value
 
@@ -28,10 +31,10 @@ $(document).ready(function(){ // waiting to document to by fully loaded - best p
         // 2 - selection of ol list and styling them
         
             $('ol#ordered_list li:first').css('color', '#0168ae');
-            $('ol#ordered_list li:last').css('color', 'black');
+            $('ol#ordered_list li:last').css('color', 'green');
             $('ol#ordered_list li:even').css('background-color', 'lightgray');
             $('ol#ordered_list li:odd').css('background-color', '#ffffff');
-            $('ol#ordered_list li:nth-child(4n)').css('list-style', 'none');
+            $('ol#ordered_list li:nth-child(5n)').css('list-style', 'none');
       
 
 

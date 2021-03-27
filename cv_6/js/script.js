@@ -15,6 +15,7 @@ $(document).ready(function(){ // waiting to document to by fully loaded - best p
     $('.events').hover(function(){ // on mouse hover recolorize paragraph text marked with class .events
       $(this).css('background', '#fde879');
     });
+    
 
     $('.events').mouseleave(function(){ // on mouse leave reset color to default #eeeeee
       $(this).css('background', '#eeeeee');
@@ -26,41 +27,41 @@ $(document).ready(function(){ // waiting to document to by fully loaded - best p
       //alert('Button Clicked!');
       $("#play_with_button").text("Button - clicked!");
       console.log("Button - clicked!");
-    });
+    }); 
 
-    $('#play_with_button').on('click', function(){
+    $('#event_example_button').on("click", function(){
       $("#play_with_button").text("Button - clicked alternate way with .on() method!");
       console.log("Button - clicked alternate way with .on() method!");
       
-    });
+    }); 
 
-    $('#play_with_button').dblclick(function(){
+    $('#event_example_button').dblclick(function(){
       $("#play_with_button").text("Button - doubleclicked!");
       console.log("Button - doubleclicked!");
       
     });
 
-    $('#play_with_button').hover(function(){
+    $('#event_example_button').hover(function(){
       $("#play_with_button").text("Button - hover!");
       console.log("Button - hover!");
     });
 
-    $('#play_with_button').on('mouseenter', function(){
+    $('#event_example_button').on('mouseenter', function(){
       $("#play_with_button").text("Button - mouseenter!");
       console.log("Button - mouseenter!");
     });
 
-    $('#play_with_button').on('mouseleave', function(){
+    $('#event_example_button').on('mouseleave', function(){
       $("#play_with_button").text("Button - mouseleave!");
       console.log("Button - mouseleave!");
     });
 
-    $('#play_with_button').on('mousemove', function(){
+    $('#event_example_button').on('mousemove', function(){
       $("#play_with_button").text("Button - mousemove!");
       console.log("Button - mousemove!");
     });
 
-    $('#play_with_button').on('mousedown', function(){
+    $('#event_example_button').on('mousedown', function(){
       ("#play_with_button").text("Button - mousedown!");
       console.log("Button - mousedown!");
     });
@@ -71,7 +72,7 @@ $(document).ready(function(){ // waiting to document to by fully loaded - best p
       alert('1 - ID: '+ e.currentTarget.id);
       alert('2 - innerHTML is: '+e.currentTarget.innerHTML);
       alert('3 - outerHTML is: '+e.currentTarget.outerHTML);
-      alert('4 - className is: '+e.currentTarget.className);
+      alert('4 - className is: '+e.currentTarget.className); 
     });
 
     // obtaining moving mouse coordinates
@@ -80,12 +81,30 @@ $(document).ready(function(){ // waiting to document to by fully loaded - best p
     });
 
     //button 2 click - alternate colors for page loaded
+    poc = 0;
     $('#button_2').click(function(){
-      $('body').css('background-color', 'white');
-      $('.articles').css('background-image', 'none');
-      $('.footer').css('background-color', '#3ca6d1');
+      
+
+      if (poc == 0) {
+          $('body').css('background-color', 'white');
+          $('.articles').css('background-image', 'none');
+          $('.footer').css('background-color', '#3ca6d1');
+          poc = 1;
+      } else {
+          $('body').css('background-color', '#fcd937');
+          $('.articles').css('background-image', 'url(http://localhost/javascript_cvicenia/cv_3/images/background.png)');
+          $('.footer').css('background-color', '#cca700');
+
+
+        poc=0;
+      }
       
     }); // Way how to improve recolorization? Toogling with auxiliary variable and swich ... .
+
+    // Examle of handling document change
+    $(window).on('resize', function(e){
+      alert('Page resized '); 
+    });
  
 
 
