@@ -23,7 +23,8 @@
            post. </p>
         
         <div class="events_width_container ">
-           <form action="index.htm" method="post">
+           <form id="example_form" action="evaluate.php" method="post"  >
+              <!--  testing way how to block submiting form onsubmit="event.preventDefault(); return checkform_onSubmit();" -->
               <div class="fieldset" >
                   <legend>Example of form:</legend>
                   <table id="form_table">
@@ -32,7 +33,7 @@
                            <label for="id">Nick:</label>
                         </td>
                         <td>
-                           <input id="nick" name="nick" type="text">
+                           <input id="nick" name="nick" type="text"><span id="warning_nick" class="warning_red"  required>*</span> <!--  required form validation -->
                         </td>
                      </tr>
                      <tr>
@@ -40,21 +41,26 @@
                            <label for="age">Age:</label>
                         </td>
                         <td>
-                           <input id="age" name="age" type="text" width="3" maxlength="3" size="3">
+                           <input id="age" name="age" type="text" width="3" maxlength="3" size="3"><span id="warning_age" class="warning_red">*</span>
                         </td>
                      </tr>
                      <tr>
                      <td>
-                        <label for="">e-mail:</label>
+                        <label for="">e-mail:</label> 
                      </td>
                      <td>
-                        <input id="e-mail" name="e-mail" type="e-mail" >
+                        <input id="e-mail" name="e-mail" type="e-mail" > <span id="warning_email" class="warning_red">*</span>
                      </td>
                   </tr>
                   <tr>
+                     <td colspan="2"><span id="warning_message" class="warning_red">* There will by explantation message for correction of errors in form.</span></td>
+                  </tr>
+
+
+                  <tr>
                   
                      <td colspan="2">
-                        <center><button type="submit" id="submit" name="submit" class="btn btn-primary center"> Submit</button></center>
+                        <center><button type="submit" id="submit" name="submit" class="btn btn-primary center"  >    Submit</button></center>
                      </td>
                
                   </tr>

@@ -210,6 +210,18 @@ header {
   padding-bottom: 20px;
 }
 
+/* styling warnings and validation messages in form */
+
+.warning_red {
+  color: red;
+  padding: 5px;
+  margin-left: 3px;
+}
+
+#warning_message {
+  display: block;
+}
+
 
 
   
